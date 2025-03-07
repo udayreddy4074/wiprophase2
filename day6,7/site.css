@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color:antiquewhite;
+}
+
+h2 {
+    color: blue;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+    nav a {
+        margin-right: 10px;
+    }

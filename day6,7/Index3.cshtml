@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Second - Index3";
+}
+
+<h2>Cities List</h2>
+<ul>
+    @foreach (var city in (List<string>)TempData["Cities"])
+    {
+        <li>@city</li>
+    }
+</ul>

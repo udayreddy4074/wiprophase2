@@ -1,0 +1,12 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Second - Index1";
+}
+
+<h2>Numbers List</h2>
+<ul>
+    @foreach (var num in (List<int>)ViewData["Numbers"])
+    {
+        <li>@num</li>
+    }
+</ul>
