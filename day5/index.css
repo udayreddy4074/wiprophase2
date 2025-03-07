@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+  @apply bg-blue-500 text-gray-900 min-h-screen flex flex-col items-center justify-center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+  @apply bg-white w-full h-screen flex flex-col items-center justify-center shadow-lg fixed top-0 left-0;
+}
+
+nav a {
+  @apply block w-full text-center py-4 text-lg font-semibold text-gray-800 transition hover:bg-blue-700 hover:text-white;
+  margin-bottom: 200px; /* Adds spacing between navbar items */
+}
+
+/* Button Styles */
+button {
+  @apply w-full py-3 bg-red-500 text-white font-bold rounded-lg shadow-md transition hover:bg-red-600;
+}
+
+/* Main Content */
+.container {
+  @apply w-full max-w-3xl mx-auto p-6;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white p-6 rounded-lg shadow-lg text-center;
+}
+
+/* Task List Styles */
+.task-item {
+  @apply flex justify-between items-center p-4 bg-white rounded-lg shadow-md my-2;
+}
+
+.task-item button {
+  @apply bg-red-500 text-white px-4 py-2 rounded-lg transition hover:bg-red-600;
+}
+
+/* Header Styling */
+h1 {
+  @apply text-4xl font-bold text-center mb-6 text-white;
+}
+
+/* Login Page */
+.login-container {
+  @apply flex flex-col items-center justify-center min-h-screen;
+}
+
+.login-button {
+  @apply mt-6 bg-green-600 text-white px-6 py-3 rounded-lg shadow-md transition hover:bg-green-700;
+}
+
+/* Profile Page */
+.profile-container {
+  @apply flex flex-col items-center justify-center min-h-screen;
+}
+
+.profile-card {
+  @apply bg-white p-6 rounded-lg shadow-lg text-center w-96;
+}
